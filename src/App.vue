@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LinkSection/>
+  <CustomNav title="Blom ada nama"/>
+  <HelloWorld/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import CustomNav from './components/nav.vue'
 
 export default {
   name: 'App',
   components: {
+    CustomNav,
     HelloWorld
-  }
+    }
 }
 </script>
 
@@ -21,6 +24,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+ 
+}
+body{
+  background-image: url("assets/img.png");
+  background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
 }
 </style>
